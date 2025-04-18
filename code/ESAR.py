@@ -113,7 +113,7 @@ fuel_dict = {'U235': 0.09976,
              'Al27': 0.42467}
 fuel.add_components(fuel_dict,'wo')
 fuel.set_density('g/cm3',5.53)
-fuel.temperature=273
+fuel.temperature=293
 fuel.depletable=True
 
 water = openmc.Material()
@@ -121,7 +121,7 @@ water_dict = {'H1':-0.11191,
               'O16':-0.88809}
 water.add_components(water_dict,'wo')
 water.set_density('g/cm3',0.9982)
-water.temperature=273
+water.temperature=293
 water.add_s_alpha_beta('c_H_in_H2O')
 
 cladding = openmc.Material()
@@ -142,7 +142,7 @@ cladding_dict = {'Al27': 0.9807392,
                  'B11' : 9.78493E-07}
 cladding.add_components(cladding_dict,'wo')
 cladding.set_density('g/cm3',2.7)
-cladding.temperature = 273
+cladding.temperature = 293
 
 
 
